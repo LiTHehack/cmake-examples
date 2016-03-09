@@ -18,7 +18,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     //Open a window
-	GLFWwindow *window = glfwCreateWindow(640, 480, "Totally fluids", NULL, NULL);
+	GLFWwindow *window = glfwCreateWindow(200, 160, "CMake and GLFW", NULL, NULL);
     if (!window) {
         glfwTerminate();
         return -1;
@@ -26,9 +26,9 @@ int main() {
 
     //Set the GLFW-context the current window
     glfwMakeContextCurrent(window);
-    cout << glGetString(GL_VERSION) << "\n";
 
     while (!glfwWindowShouldClose(window)) {
+    	glfwPollEvents();
     	Sleep(10);
     }
 
