@@ -1,0 +1,1 @@
+Example showing how to add 3rd party libraries with CMake structures.
